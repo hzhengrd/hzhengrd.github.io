@@ -1,370 +1,688 @@
-
 <!DOCTYPE html>
+<!--
+  ============================================================
+  Hao Zheng — Academic Homepage  ·  rebuilt Aug 2026
+  ------------------------------------------------------------
+  DOMAIN NOTE (SEO):
+    Site is served at https://hzhengrd.github.io/. The GitHub
+    repository MUST be named "hzhengrd.github.io" for that URL
+    to work (rename it in GitHub → Settings → General).
+    Canonical / Open Graph / sitemap URLs below are all set to
+    https://hzhengrd.github.io/.
+  ============================================================
+-->
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Hao Zheng</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+  <!-- Primary SEO -->
+  <title>Hao Zheng — Embodied AI &amp; Human–Robot Collaboration | The University of Hong Kong</title>
+  <meta name="description" content="Hao Zheng (郑浩) is a Postdoctoral Fellow at The University of Hong Kong. He builds embodied AI, video understanding and human–robot collaboration methods for human-centric manufacturing and Industry 5.0." />
+  <meta name="author" content="Hao Zheng" />
+  <meta name="keywords" content="Hao Zheng, Zheng Hao, 郑浩, embodied AI, video understanding, human-robot collaboration, human-centric manufacturing, Industry 5.0, dual-hand action segmentation, vision-language models, assembly, The University of Hong Kong" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#0c1524" />
 
-	    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+  <!-- Canonical (see DOMAIN NOTE above) -->
+  <link rel="canonical" href="https://hzhengrd.github.io/" />
 
-	    <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile" />
+  <meta property="og:site_name" content="Hao Zheng" />
+  <meta property="og:title" content="Hao Zheng — Embodied AI &amp; Human–Robot Collaboration" />
+  <meta property="og:description" content="Postdoctoral Fellow at The University of Hong Kong. Researching embodied AI, video understanding, human–robot collaboration and human-centric manufacturing." />
+  <meta property="og:url" content="https://hzhengrd.github.io/" />
+  <meta property="og:image" content="https://hzhengrd.github.io/image/hao_profile_smile.JPG" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="profile:first_name" content="Hao" />
+  <meta property="profile:last_name" content="Zheng" />
 
-	    <!-- Bootstrap CSS -->
-	    <link rel="stylesheet" href="css/bootstrap.min.css">
-	    
-	    <!-- Style -->
-	    <link rel="stylesheet" href="css/button_style.css">
-        
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-            <div class="container-lg px-5">
-                <a class="navbar-brand" href="#page-top">Hao Zheng </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#publication">Publication</a></li>
-                        <li class="nav-item"><a class="nav-link" href="CV/CV_hao.pdf" download="CV_hao.pdf">CV</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hao Zheng — Embodied AI &amp; Human–Robot Collaboration" />
+  <meta name="twitter:description" content="Postdoctoral Fellow at The University of Hong Kong. Embodied AI · Video understanding · Human–robot collaboration · Human-centric manufacturing." />
+  <meta name="twitter:image" content="https://hzhengrd.github.io/image/hao_profile_smile.JPG" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230c1524'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' font-weight='600' fill='%23d9a868' text-anchor='middle'%3EHZ%3C/text%3E%3C/svg%3E" />
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Inter:wght@300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/main.css" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://hzhengrd.github.io/#person",
+        "name": "Hao Zheng",
+        "alternateName": "Zheng Hao",
+        "givenName": "Hao",
+        "familyName": "Zheng",
+        "jobTitle": "Postdoctoral Fellow",
+        "email": "mailto:haozheng5219@gmail.com",
+        "url": "https://hzhengrd.github.io/",
+        "image": "https://hzhengrd.github.io/image/hao_profile_smile.JPG",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "The University of Hong Kong",
+          "url": "https://www.hku.hk/"
+        },
+        "alumniOf": [
+          { "@type": "CollegeOrUniversity", "name": "The University of Auckland" },
+          { "@type": "CollegeOrUniversity", "name": "China University of Mining and Technology" }
+        ],
+        "knowsAbout": [
+          "Embodied AI", "Video Understanding", "Human-Robot Collaboration",
+          "Human-Centric Manufacturing", "Industry 5.0", "Vision-Language Models",
+          "Action Segmentation", "Intelligent Assembly"
+        ],
+        "sameAs": [
+          "https://scholar.google.com/citations?user=OHEa2rIAAAAJ",
+          "https://github.com/hzhengrd",
+          "https://www.linkedin.com/in/hao-zheng-ab7b15248/"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://hzhengrd.github.io/#website",
+        "url": "https://hzhengrd.github.io/",
+        "name": "Hao Zheng — Research Homepage",
+        "publisher": { "@id": "https://hzhengrd.github.io/#person" }
+      },
+      { "@type": "ScholarlyArticle", "name": "Polyphony: Diffusion-based dual-hand action segmentation with alternating vision transformer and semantic conditioning", "author": [{"@type":"Person","name":"Hao Zheng"}], "datePublished": "2026", "publisher": {"@type":"Organization","name":"IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)"} },
+      { "@type": "ScholarlyArticle", "name": "A compositional dual-hand action recognition method for LLM-driven assembly assistance", "author": [{"@type":"Person","name":"Hao Zheng"}], "datePublished": "2026", "publisher": {"@type":"Organization","name":"Journal of Manufacturing Systems"} },
+      { "@type": "ScholarlyArticle", "name": "Compositional Context Fine-Tuning Vision-Language Model for Complex Assembly Action Understanding from Videos", "author": [{"@type":"Person","name":"Hao Zheng"}], "datePublished": "2026", "publisher": {"@type":"Organization","name":"IEEE International Conference on Robotics and Automation (ICRA)"} },
+      { "@type": "ScholarlyArticle", "name": "A human-robot collaborative assembly framework with quality checking based on real-time dual-hand action segmentation", "author": [{"@type":"Person","name":"Hao Zheng"}], "datePublished": "2025", "publisher": {"@type":"Organization","name":"Robotics and Computer-Integrated Manufacturing"} },
+      { "@type": "ScholarlyArticle", "name": "HA-ViD: A Human Assembly Video Dataset for Comprehensive Assembly Knowledge Understanding", "author": [{"@type":"Person","name":"Hao Zheng"}], "datePublished": "2023", "publisher": {"@type":"Organization","name":"Advances in Neural Information Processing Systems (NeurIPS)"} }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- SVG sprite -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+    <symbol id="i-scholar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/><path d="M22 10v6"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C17.3 4.7 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.2c0 .4.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5Z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7H9.2V9h3.4v1.6h.1c.5-.9 1.7-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.2ZM5.5 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2ZM7.3 20.4H3.6V9h3.7v11.4Z"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></symbol>
+    <symbol id="i-pdf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="M9 15h6M9 11h2"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13 17 22l-5-3-5 3 1.5-9"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-gear" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.6 1.6 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.6 1.6 0 0 0-1.8-.3 1.6 1.6 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.6 1.6 0 0 0-1-1.5 1.6 1.6 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.6 1.6 0 0 0 .3-1.8 1.6 1.6 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.6 1.6 0 0 0 1.5-1 1.6 1.6 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.6 1.6 0 0 0 1.8.3 1.6 1.6 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.6 1.6 0 0 0 1 1.5 1.6 1.6 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.6 1.6 0 0 0-.3 1.8 1.6 1.6 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.6 1.6 0 0 0-1.5 1Z"/></symbol>
+    <symbol id="i-radar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12 19 5"/><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2Z"/><circle cx="12" cy="13" r="4"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9"/><path d="M16 3.1a4 4 0 0 1 0 7.8"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-robot" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M12 8V4M12 4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"/><circle cx="9" cy="13" r="1"/><circle cx="15" cy="13" r="1"/><path d="M2 12v4M22 12v4"/></symbol>
+  </svg>
+
+  <!-- ===================== NAV ===================== -->
+  <nav class="site-nav" aria-label="Primary">
+    <div class="container">
+      <a class="brand" href="#top">
+        <span class="brand-mark">HZ</span>
+        Hao Zheng
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg class="i-menu"><use href="#i-menu"/></svg>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="nav-cta" href="files/cv/Hao_Zheng_CV.pdf" download>CV</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+    <!-- ===================== HERO ===================== -->
+    <header class="hero" id="top">
+      <div class="hero-aurora" aria-hidden="true">
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+        <span class="blob blob-3"></span>
+      </div>
+      <canvas id="particles" aria-hidden="true"></canvas>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="hero-eyebrow"><span class="dot"></span> Postdoctoral Fellow · The University of Hong Kong</span>
+          <h1>Hao Zheng<span class="zh">郑 浩</span></h1>
+          <p class="hero-role">Embodied AI · Video Understanding · <strong>Human–Robot Collaboration</strong></p>
+          <div class="type-line">
+            <span id="typewriter" data-phrases="Building robots that understand human activity|Multimodal perception for smart manufacturing|Vision-language models for assembly|Human-centric manufacturing · Industry 5.0|Dual-hand action segmentation &amp; understanding"></span>
+          </div>
+          <p class="hero-bio">I develop multimodal perception, video-based action understanding and embodied AI so that robots can interpret human activity, collaborate naturally with people, and make manufacturing smarter, safer and more productive.</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#publications">View Publications</a>
+            <a class="btn btn-ghost" href="files/cv/Hao_Zheng_CV.pdf" download>
+              <svg width="16" height="16"><use href="#i-download"/></svg> Download CV
+            </a>
+          </div>
+
+          <div class="social-row">
+            <a href="mailto:haozheng5219@gmail.com" aria-label="Email"><svg><use href="#i-mail"/></svg></a>
+            <a href="https://scholar.google.com/citations?user=OHEa2rIAAAAJ" target="_blank" rel="noopener" aria-label="Google Scholar"><svg><use href="#i-scholar"/></svg></a>
+            <a href="https://github.com/hzhengrd" target="_blank" rel="noopener" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
+            <a href="https://www.linkedin.com/in/hao-zheng-ab7b15248/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
+          </div>
+        </div>
+
+        <div class="hero-portrait">
+          <div class="portrait-wrap">
+            <img src="image/hao_profile_smile.JPG" alt="Portrait of Hao Zheng" width="680" height="850" fetchpriority="high" />
+          </div>
+          <div class="portrait-ring" aria-hidden="true"></div>
+        </div>
+      </div>
+
+      <a class="hero-scroll" href="#about" aria-label="Scroll to about">
+        <span class="wheel"><i></i></span>
+        Scroll
+      </a>
+    </header>
+
+    <!-- ===================== STATS ===================== -->
+    <div class="stats-strip">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat reveal"><div class="num" data-count="20" data-suffix="+">20+</div><div class="label">Peer-reviewed publications</div></div>
+          <div class="stat reveal" data-delay="1"><div class="num" data-count="15">15</div><div class="label">First / co-first author</div></div>
+          <div class="stat reveal" data-delay="2"><div class="num" data-count="2">2</div><div class="label">Granted patents</div></div>
+          <div class="stat reveal" data-delay="3"><div class="num" data-count="10" data-suffix="+">10+</div><div class="label">Reviewer venues</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about">
+      <div class="container about-grid">
+        <div class="about-copy reveal">
+          <div class="section-head" style="margin-bottom:24px">
+            <span class="eyebrow">Research profile</span>
+            <h2>Making machines understand<br>human work</h2>
+          </div>
+          <p class="lead">My research sits at the intersection of artificial intelligence and manufacturing — teaching robots to see, interpret and anticipate human activity in real, physical workspaces.</p>
+          <p>I build <strong>multimodal perception</strong>, <strong>video-based action understanding</strong> and <strong>embodied AI</strong> methods that connect vision-language models with the messy reality of assembly and production. The goal: robots that collaborate with people naturally, transfer knowledge seamlessly, and improve quality and productivity.</p>
+          <p>Currently I am a Postdoctoral Fellow at <strong>The University of Hong Kong</strong> (CI3 Lab), working on collaborative embodied AI, human–robot collaboration and digital twins for modular construction with <a href="https://www.civil.hku.hk/" target="_blank" rel="noopener">Prof. Xiao Li</a>. Previously I was a Postdoctoral Fellow at <strong>New York University Abu Dhabi</strong> and completed my PhD at <strong>The University of Auckland</strong>.</p>
+          <p>I am always open to collaborations at the boundary of AI and robotics — <a href="mailto:haozheng5219@gmail.com">get in touch</a>.</p>
+        </div>
+
+        <div class="interest-panel reveal" data-delay="2">
+          <h3>Research interests</h3>
+          <p class="sub">The threads that connect my work</p>
+          <div class="chips">
+            <span class="chip">Embodied AI</span>
+            <span class="chip">Vision-Language Models</span>
+            <span class="chip">Video Understanding</span>
+            <span class="chip">Human–Robot Collaboration</span>
+            <span class="chip">Human-Centric Manufacturing</span>
+            <span class="chip">Industry 5.0</span>
+            <span class="chip">Intelligent Assembly</span>
+            <span class="chip">Digital Twins</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== NEWS ===================== -->
+    <section id="news" class="alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Latest</span>
+          <h2>News</h2>
+        </div>
+        <ul class="news-list">
+          <li class="news-item reveal"><span class="news-date">Apr 2026</span><p>Joined <strong>The University of Hong Kong</strong> as a Postdoctoral Fellow — collaborative embodied AI &amp; digital twins for modular construction (with Prof. Xiao Li).</p></li>
+          <li class="news-item reveal"><span class="news-date">2026</span><p>Paper <strong>“Polyphony”</strong> accepted to <strong>CVPR 2026</strong> — diffusion-based dual-hand action segmentation.</p></li>
+          <li class="news-item reveal"><span class="news-date">2026</span><p>Paper on <strong>LLM-driven assembly assistance</strong> accepted to <strong>Journal of Manufacturing Systems</strong>.</p></li>
+          <li class="news-item reveal"><span class="news-date">2026</span><p>Paper <strong>“Compositional Context Fine-Tuning (CCFT)”</strong> accepted to <strong>ICRA 2026</strong>.</p></li>
+          <li class="news-item reveal"><span class="news-date">Dec 2025</span><p>PhD in Mechanical Engineering officially awarded — <strong>The University of Auckland</strong>.</p></li>
+          <li class="news-item reveal"><span class="news-date">May 2025</span><p>Joined <strong>New York University Abu Dhabi</strong> as a Postdoctoral Fellow (with Prof. Tuka Alhanai).</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== PUBLICATIONS ===================== -->
+    <section id="publications">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Selected publications</span>
+          <h2>Publications</h2>
+          <p>Asterisk (*) denotes co-first authorship. Selected works — full list on <a href="https://scholar.google.com/citations?user=OHEa2rIAAAAJ" target="_blank" rel="noopener">Google Scholar</a>.</p>
+        </div>
+
+        <div class="pub-tabs reveal">
+          <button class="pub-tab active" data-filter="all">All</button>
+          <button class="pub-tab" data-filter="first">First &amp; Co-first Author</button>
+          <button class="pub-tab" data-filter="collab">Collaborative</button>
+        </div>
+
+        <div class="pub-list">
+
+          <!-- 1 -->
+          <article class="pub-item reveal" data-type="first">
+            <div class="pub-top"><span class="pub-venue venue-journal">Journal</span><span class="pub-year">2026</span><span class="pub-author-tag">First author</span></div>
+            <h3><a href="files/papers/zheng2026-compositional-dual-hand-jms.pdf">A compositional dual-hand action recognition method for LLM-driven assembly assistance</a></h3>
+            <p class="pub-authors"><span class="me">Hao Zheng</span>, Jinyi Huang, Jintao Xue, Xiao Li, Xun Xu</p>
+            <p class="pub-where"><em>Journal of Manufacturing Systems</em> · Q1 · IF 14.9</p>
+            <div class="pub-links">
+              <a class="pub-link pdf" href="files/papers/zheng2026-compositional-dual-hand-jms.pdf"><svg><use href="#i-pdf"/></svg>PDF</a>
+              <a class="pub-link" href="https://www.sciencedirect.com/science/article/pii/S0278612526002013" target="_blank" rel="noopener"><svg><use href="#i-external"/></svg>DOI</a>
             </div>
-        </nav>
+          </article>
 
-        <header style="background-color: #e2e2e2;" class="bg-gradient py-8 text-white">
-            <div class="container-lg px-5 text-center">
-                <div class="d-flex align-items-center justify-content-center flex-wrap flex-md-nowrap" id="profile-container">
-                    <div class="me-4 mb-4" id="profile-photo">
-                        <img src="image/hao_profile_smile.JPG" alt="Me!" width="140" height="200" /> <br>
-                        <p class="lead">
-                            <a href="https://github.com/hao-zheng-research">
-                                <img src="image/github_logo.png" alt="github" width="30" height="30"></a>
-                            <a href="https://scholar.google.com/citations?user=OHEa2rIAAAAJ&hl=en&authuser=2">
-                                <img src="image/scholar_logo.png" alt="google scholar" width="30" height="30"></a>
-                            <a href="https://www.linkedin.com/in/hao-zheng-ab7b15248/">
-                                <img src="image/linkedin_logo.png" alt="linked in" width="30" height="30"></a>
-                            <a href="CV/CV_hao.pdf" download="CV_hao.pdf">
-                                <img src="image/resume_icon.png" alt="CV" width="30" height="30"></a>
-                        </p>
-                    </div>
-                    <div id="profile-description">
-                        <h12 class="fw-bolder" style="color: black; text-align: left;">Hao Zheng</h12>
-                        <p class="lead text-start" style="color: black; text-align: left;">
-                            I am a PhD candidate at the Department of Mechanical and Mechatronics Engineering at the University of Auckland, under the supervision of Professor <a href="https://profiles.auckland.ac.nz/x-xu">Xun Xu</a>.
-                            <br>My research focuses on integrating AI with Smart Manufacturing, specifically in areas of Video Understanding (Action Recognition & Segmentation), Human-Robot Collaboration, Human-Centric Manufacturing, and Generative AI.
-                            <br>If you're interested in collaborating on research projects related to AI and Robotics, feel free to reach out.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </header>
-        
-        <style>
-          /* Default: Side by side layout */
-          #profile-container {
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              justify-content: center;
-          }
-        
-          /* Mobile-specific layout: stack photo above description */
-          @media (max-width: 768px) {
-              #profile-container {
-                  flex-direction: column;
-                  align-items: center;
-              }
-        
-              #profile-photo {
-                  margin-bottom: 20px; /* Add space between photo and description */
-              }
-          }
-        </style>
-        
-        <!-- Header-->
-        <!-- <header class="bg-primary bg-gradient py-5 text-white">
-            <div class="container-lg px-5 text-center">
-                <br>
-                    <img src="image/hao_profile.png" alt="Me!" width="180" height="180">
-                    <br>
-                    <h12 class="fw-bolder">Hao Zheng</h12>
-                    <p class="lead">
-                        <a href="https://github.com/kim-minseon/">
-                        <img src="image/github_logo.png" alt="github" width="30" height="30"></a>
-                        <a href="https://scholar.google.com/citations?user=ZwObZNwAAAAJ&hl=ko">
-                        <img src="image/scholar_logo.png" alt="google scholar" width="30" height="30"></a>
-                        <a href="https://www.linkedin.com/in/minseon-kim-707a84174/">
-                        <img src="image/linkedin_logo.png" alt="linked in" width="30" height="30"></a>
-                        <a href="https://twitter.com/kim__minseon">
-                        <img src="image/twitter_logo.png" alt="linked in" width="30" height="30"></a>
-                        <a href="https://drive.google.com/file/d/198K4AKYDeHY_wETi9GEVECIioqDq7_K4/view?usp=drive_link">
-                        <img src="image/resume_icon.png" alt="CV" width="30" height="30"></a>
-                    </p>
-                
-            </div>
-        </header> -->
-        <!-- About section-->
+          <!-- 2 -->
+          <article class="pub-item reveal" data-type="first">
+            <div class="pub-top"><span class="pub-venue venue-conf">Conference</span><span class="pub-year">2026</span><span class="pub-author-tag">First author</span></div>
+            <h3><a href="files/papers/zheng2026-polyphony-cvpr.pdf">Polyphony: Diffusion-based dual-hand action segmentation with alternating vision transformer and semantic conditioning</a></h3>
+            <p class="pub-authors"><span class="me">Hao Zheng</span>, Hu Wang, Tiantian Zheng, Prajjwal Bhattarai, Tuka Alhanai</p>
+            <p class="pub-where"><em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em></p>
+            <div class="pub-links"><a class="pub-link pdf" href="files/papers/zheng2026-polyphony-cvpr.pdf"><svg><use href="#i-pdf"/></svg>PDF</a></div>
+          </article>
 
-        <!-- Work Experience section-->
-        <section id="News">
-            <div class="container-lg px-5">
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-10">
-                        <h2>News</h2>
-                        <h40>Manuscript "A human-robot collaborative assembly framework with quality checking based on real-time dual-hand action segmentation" has been accepted by <b>Robotics and Computer-Integrated Manufacturing</b>.</h40> <br>
-                        <h40><b>Hao Zheng</b>, Wanqing Xia, Xun Xu</h40>  <a href="https://www.sciencedirect.com/science/article/pii/S0736584525000304">paper</a> <br>
-                        <br>
-                        <h40>Manuscript "Generative AI for Future Manufacturing" has been submitted to <b>Advanced Engineering Informatics</b>, <i>Preprint is coming</i>.</h40> <br>
-                        <h40><b>Hao Zheng</b>, Ziyue Geng, Xun Xu</h40> <br>
-                    </div>
-                </div>
+          <!-- 3 -->
+          <article class="pub-item reveal" data-type="first">
+            <div class="pub-top"><span class="pub-venue venue-journal">Journal</span><span class="pub-year">2026</span><span class="pub-author-tag">First author</span></div>
+            <h3><a href="files/papers/zheng2026-generative-ai-fem.pdf">Foundation model-based generative AI for smart manufacturing: A paradigm shift</a></h3>
+            <p class="pub-authors"><span class="me">Hao Zheng</span>, Ziyue Geng, Xun Xu</p>
+            <p class="pub-where"><em>Engineering Management</em> · Q1 · IF 9.8</p>
+            <div class="pub-links">
+              <a class="pub-link pdf" href="files/papers/zheng2026-generative-ai-fem.pdf"><svg><use href="#i-pdf"/></svg>PDF</a>
+              <a class="pub-link" href="https://doi.org/10.1007/s42524-026-5359-0" target="_blank" rel="noopener"><svg><use href="#i-external"/></svg>DOI</a>
             </div>
-        </section>
+          </article>
 
-        <!-- <section id="about">
-            <div class="container-lg px-5">
-                <div class="row gx-5 justify-content-center">
-                	<div class="col-lg-10">
-                        <h50>
-                             I am a postdoctoral researcher at Microsoft Research–Montréal. I completed my PhD at KAIST, advised by Professor <a href="http://www.sungjuhwang.com">Sung Ju Hwang</a>. 
-                        <br> My current research interests lie in identifying realistic safety risks in AI models and developing efficient and user-friendly approaches to enhance the trustworthiness and controllability of AI models. 
-                        <b>If you're interested in collaborating on research projects related to AI safety</b>, feel free to contact me :) 
-                        </h50>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <!-- Services section-->
-        <section class="bg-light" id="Selected Publications">
-            <div class="container-lg px-5">
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-10">
-                        <h2>Publication <h60>(*co-first author)</h60></h2>
-                        <h40>
-                            A human-robot collaborative assembly framework with quality checking based on real-time dual-hand action segmentation <button class="btn btn-primary btn-sm btn-aqua">Video Understanding</button> <button class="btn btn-primary btn-sm btn-purple">Human-Robot Collaboration</button><button class="btn btn-primary btn-sm btn-orange">Assembly</button> </h40><br>
-                            <h40>&nbsp; &nbsp; &nbsp; &nbsp;<b>Hao Zheng</b>, Wanqing Xia, Xun Xu </h40> <br>
-                            <h40>&nbsp; &nbsp; &nbsp; &nbsp;Robotics and Computer-Integrated Manufacturing (<b>RCIM</b>), <a href="https://www.sciencedirect.com/science/article/pii/S0736584525000304">paper</a>, <a href="https://github.com/hao-zheng-research/A-human-robot-collaborative-assembly-framework-with-quality-checking">Code</a></h40> 
-                        <br>
-                        <br> 
-                        <h40>
-                        DuCAS: a knowledge-enhanced dual-hand compositional action segmentation method for human-robot collaborative assembly <button class="btn btn-primary btn-sm btn-aqua">Video Understanding</button> <button class="btn btn-primary btn-sm btn-purple">Human-Robot Collaboration</button><button class="btn btn-primary btn-sm btn-orange">Assembly</button> </h40><br>
-                        <h40>&nbsp; &nbsp; &nbsp; &nbsp;<b>Hao Zheng</b>, Regina Lee, Huachang Liang, Yuqian Lu, Xun Xu </h40> <br>
-                        <h40>&nbsp; &nbsp; &nbsp; &nbsp;2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (<b>IROS</b>), <a href="https://github.com/LISMS-AKL-NZ/DuCAS">Code</a></h40> 
-                        <br>
-                        <br>
-                        <h40>
-                        DuHa: a dual-hand action segmentation method for human-robot collaborative assembly <button class="btn btn-primary btn-sm btn-aqua">Video Understanding</button> <button class="btn btn-primary btn-sm btn-purple">Human-Robot Collaboration</button><button class="btn btn-primary btn-sm btn-orange">Assembly</button>  </h40> <br>
-                        <h40>&nbsp; &nbsp; &nbsp; &nbsp;<b>Hao Zheng*</b>, Regina Lee, Yuqian Lu, Xun Xu </h40> <br>
-                        <h40>&nbsp; &nbsp; &nbsp; &nbsp;2024 IEEE 20th International Conference on Automation Science and Engineering (<b>CASE</b>), <a href="https://github.com/LISMS-AKL-NZ/DuHa">Code</a></h40> 
-                        <br>
-                        <br>
+          <!-- 4 -->
+          <article class="pub-item reveal" data-type="first">
+            <div class="pub-top"><span class="pub-venue venue-conf">Conference</span><span class="pub-year">2026</span><span class="pub-author-tag">First author</span></div>
+            <h3><a href="files/papers/zheng2026-ccft-icra.pdf">Compositional Context Fine-Tuning Vision-Language Model for Complex Assembly Action Understanding from Videos</a></h3>
+            <p class="pub-authors"><span class="me">Hao Zheng</span>, Jinyi Huang, Tiantian Zheng, Xun Xu, Tuka Alhanai</p>
+            <p class="pub-where"><em>IEEE International Conference on Robotics and Automation (ICRA)</em></p>
+            <div class="pub-links"><a class="pub-link pdf" href="files/papers/zheng2026-ccft-icra.pdf"><svg><use href="#i-pdf"/></svg>PDF</a></div>
+          </article>
 
-                        <h40>
-                        A Vision-Enabled Fatigue-Sensitive Human Digital Twin Towards Human-Centric Human-Robot Collaboration <button class="btn btn-primary btn-sm btn-purple">Human-Robot Collaboration</button> <button class="btn btn-primary btn-sm btn-gray">Fatigue</button> </h40> <br>
-                        <h40>&nbsp; &nbsp; &nbsp; &nbsp;Saahil Chand, <b>Hao Zheng</b>, Yuqian Lu </h40> <br>
-                        <h40>&nbsp; &nbsp; &nbsp; &nbsp;<b>Journal of Manufacturing Systems</b>.</h40> 
-                        <br>
-                    <br>
-                        <h40>
-                        HA-ViD: A Human Assembly Video Dataset for Comprehensive Assembly Knowledge Understanding <button class="btn btn-primary btn-sm btn-aqua">Video Understanding</button> <button class="btn btn-primary btn-sm btn-purple">Human-Robot Collaboration</button></h40> <button class="btn btn-primary btn-sm btn-orange">Assembly</button> <br>
-			            <h40>&nbsp; &nbsp; &nbsp; &nbsp;<b>Hao Zheng*</b>, Regina Lee*, Yuqian Lu </h40> <br>
-                        <h40>&nbsp; &nbsp; &nbsp; &nbsp;<b>NeurIPS 2023</b>, <a href="https://arxiv.org/abs/2307.05721">PDF</a>, <a href="https://iai-hrc.github.io/ha-vid">Project Page</a>, <a href="https://github.com/iai-hrc/ha-vid">Code</a></h40>
-                    <br>
-			    
-			        <br>
-			            <h40>
-                        Human-robot shared assembly taxonomy: A step toward seamless human-robot knowledge transfer <button class="btn btn-primary btn-sm btn-orange">Assembly</button> <button class="btn btn-primary btn-sm btn-purple">Human-Robot Collaboration</button> </h40> <br>
-                        <h40>&nbsp; &nbsp; &nbsp; &nbsp;Regina Lee*, <b>Hao Zheng*</b>, Yuqian Lu </h40> <br>
-                        <h40>&nbsp; &nbsp; &nbsp; &nbsp;<b>Robotics and Computer-Integrated Manufacturing</b>, <a href="https://www.sciencedirect.com/science/article/pii/S0736584523001618">PDF</a>, <a href="https://iai-hrc.github.io/hr-sat">Project Page</a></h40>
-                    <br>
-                    <br>
-			            <h40>
-                        Video-Based Fatigue Estimation for Human-Robot Task Allocation Optimisation <button class="btn btn-primary btn-sm btn-purple">Human-Robot Collaboration</button> <button class="btn btn-primary btn-sm btn-aqua">Video Understanding</button> <button class="btn btn-primary btn-sm btn-brown">Human-Centric Manufacturing</button> </h40> <br>
-                        <h40>&nbsp; &nbsp; &nbsp; &nbsp;<b>Hao Zheng</b>, Saahil Chand, Ali Keshvarparast, Daria Battini, Yuqian Lu </h40> <br>
-                        <h40>&nbsp; &nbsp; &nbsp; &nbsp;2023 IEEE 19th International Conference on Automation Science and Engineering (<b>CASE</b>), <a href="https://ieeexplore.ieee.org/abstract/document/10260460">PDF</a></h40>
-                    <br>
-                    <br>
-			            <h40>
-                        Outlook on human-centric manufacturing towards Industry 5.0 <button class="btn btn-primary btn-sm btn-brown">Human-Centric Manufacturing</button> <button class="btn btn-primary btn-sm btn-green">Industry 5.0</button> </h40> <br>
-			            <h40>&nbsp; &nbsp; &nbsp; &nbsp;Yuqian Lu, <b>Hao Zheng</b>, Saahil Chand, Wanqing Xia, Zengkun Liu, Xun Xu, Lihua Wang, Zhaojun Qin, Jinsong Bao </h40> <br>
-                        <h40>&nbsp; &nbsp; &nbsp; &nbsp;<b>Journal of Manufacturing Systems</b>, <a href="https://www.sciencedirect.com/science/article/abs/pii/S0278612522000164">PDF</a></h40>
-                    <br>
-			        <br>
-                        <h40>
-                        A general fault diagnosis framework for rotating machinery and its flexible application example <button class="btn btn-primary btn-sm btn-blue">Fault Diagnosis</button> </h40> <br>
-                        <h40>&nbsp; &nbsp; &nbsp; &nbsp;<b>Hao Zheng</b>, Gang Cheng, Yuqian Lu, Chang Liu, Yong Li </h40> <br>
-                        <h40>&nbsp; &nbsp; &nbsp; &nbsp;<b>Measurement</b>, <a href="https://www.sciencedirect.com/science/article/abs/pii/S0263224122007205">PDF</a></h40>
-                    <br>
+          <!-- 5 -->
+          <article class="pub-item reveal" data-type="first">
+            <div class="pub-top"><span class="pub-venue venue-journal">Journal</span><span class="pub-year">2025</span><span class="pub-author-tag">First author</span></div>
+            <h3><a href="files/papers/zheng2025-hrc-quality-checking-rcim.pdf">A human-robot collaborative assembly framework with quality checking based on real-time dual-hand action segmentation</a></h3>
+            <p class="pub-authors"><span class="me">Hao Zheng</span>, Wanqing Xia, Xun Xu</p>
+            <p class="pub-where"><em>Robotics and Computer-Integrated Manufacturing</em>, 94, 102976 · Q1 · IF 12.3</p>
+            <div class="pub-links">
+              <a class="pub-link pdf" href="files/papers/zheng2025-hrc-quality-checking-rcim.pdf"><svg><use href="#i-pdf"/></svg>PDF</a>
+              <a class="pub-link" href="https://www.sciencedirect.com/science/article/pii/S0736584525000304" target="_blank" rel="noopener"><svg><use href="#i-external"/></svg>DOI</a>
+            </div>
+          </article>
 
-                    <br>
-                        <h40>
-                        Vibration-based and computer vision-aided nondestructive health condition evaluation of rail track structures <button class="btn btn-primary btn-sm btn-blue">Fault Diagnosis</button> </h40> <br>
-                        <h40>&nbsp; &nbsp; &nbsp; &nbsp;Shaohua Wang*, <b>Hao Zheng*</b>, Lihua Tang, Zhaoyu Li, Renda Zhao, Yuqian Lu, Kean C. Aw </h40> <br>
-                        <h40>&nbsp; &nbsp; &nbsp; &nbsp;<b>Journal of Civil Structural Health Monitoring</b>, <a href="https://link.springer.com/article/10.1007/s13349-022-00616-x">PDF</a> </h40>
-                    <br>
-			    
-			        <br>
-                        <h40>
-                        A fault diagnosis method for planetary gear under multi-operating conditions based on adaptive extended bag-of-words model <button class="btn btn-primary btn-sm btn-blue">Fault Diagnosis</button></h40> <br>
-                        <h40>&nbsp; &nbsp; &nbsp; &nbsp;<b>Hao Zheng</b>, Gang Cheng, Yong Li, Chang Liu </h40> <br>
-                        <h40>&nbsp; &nbsp; &nbsp; &nbsp;<b>Measurement</b>, <a href="https://www.sciencedirect.com/science/article/abs/pii/S0263224120301305">PDF</a></h40>
-                    <br>    
-			    
-			        <br>
-                        <h40>
-                        A new fault diagnosis method for planetary gear based on image feature extraction and bag-of-words model <button class="btn btn-primary btn-sm btn-blue">Fault Diagnosis</button></h40><br>
-                        <h40>&nbsp; &nbsp; &nbsp; &nbsp;<b>Hao Zheng</b>, Gang Cheng, Yong Li, Chang Liu </h40> <br>
-                        <h40>&nbsp; &nbsp; &nbsp; &nbsp;<b>Measurement</b>, <a href="https://www.sciencedirect.com/science/article/pii/S0263224119304725">PDF</a></h40>
-                    </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Work Experience section-->
-        <!-- <section id="workexperience">
-            <div class="container-lg px-5">
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-10">
-                        <h2>Experience</h2>
-                        <h50>Research Internship (06.2024-08.2024)</h50> 
-                        <ul>
-                            <li><h60> ERA–KASL AI Safety Research, University of Oxford</h60></li>
-                            <li><h60> Collaborate with Prof. Philip Torr, Prof. David Krueger, Dr. Adel Bibi, Dr. Fazl Barez</h60></li>
-                        </ul>
-                        <h50>Research Collaboration (07.2023-05.2024)</h50> 
-                        <ul>
-                            <li><h60>Theory Center, Microsoft Research Asia</h60></li>
-                            <li><h60>Collaborate with Prof. Huishuai Zhang</h60></li>
-                        </ul>    
-                        <h50> Research Internship (06.2019-08.2019)</h50> 
-                        <ul>
-                            <li><h60>Radiology Department, Leiden University Medical Center (LUMC)</h60></li>
-                            <li><h60>Collaborate with Prof. Itamar Ronen</h60></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <!-- Presented section-->
-        <!-- <section class="bg-light" id="presentedtalk">
-            <div class="container-lg px-5">
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-10">
-                        <h2>Presented Talk</h2> <br>
-                        <h40><b>Invited talk</b> </h40>
-                        <br>
-                            <h50>"Automatic Jailbreaking of the Text-to-Image Generative AI Systems"</h50>
-								<ul>
-								<li> <h60>Guest Lecture, Korea University, May. 2024</h60></li>
-								</ul>
-                            <h50>"Effective Targeted Attacks for Adversarial Self-Supervised Learning"</h50>
-								<ul>
-								<li> <h60>Samsung AI Forum 2023, Samsung, Nov. 2023</h60></li>
-								</ul>
+          <!-- 6 -->
+          <article class="pub-item reveal" data-type="first">
+            <div class="pub-top"><span class="pub-venue venue-journal">Journal</span><span class="pub-year">2027</span><span class="pub-author-tag co">Co-first</span></div>
+            <h3>Video2Knowledge: Extracting temporally consistent task knowledge from monocular video for robot skill learning</h3>
+            <p class="pub-authors">Jinyi Huang<span class="co-first">*</span>, <span class="me co-first">Hao Zheng*</span>, Yifan Ren, Weiwei Wan, Xun Xu, Jan Polzer</p>
+            <p class="pub-where"><em>Robotics and Computer-Integrated Manufacturing</em> · Q1 · IF 12.3</p>
+            <p class="pub-note">In press.</p>
+          </article>
 
-                            <h50>"Generalizable Lightweight Proxy for Robust NAS against Diverse Perturbations"</h50>
-								<ul>
-								<li> <h60>R&D AI Conference, Hyundai, Nov. 2023</h60></li>
-								</ul>
+          <!-- 7 -->
+          <article class="pub-item reveal" data-type="first">
+            <div class="pub-top"><span class="pub-venue venue-conf">Conference</span><span class="pub-year">2023</span><span class="pub-author-tag">First author</span></div>
+            <h3><a href="files/papers/zheng2023-havid-neurips.pdf">HA-ViD: A Human Assembly Video Dataset for Comprehensive Assembly Knowledge Understanding</a></h3>
+            <p class="pub-authors"><span class="me">Hao Zheng</span>, Regina Lee, Yuqian Lu</p>
+            <p class="pub-where"><em>Advances in Neural Information Processing Systems (NeurIPS)</em>, 36, 67069–67081</p>
+            <div class="pub-links">
+              <a class="pub-link pdf" href="files/papers/zheng2023-havid-neurips.pdf"><svg><use href="#i-pdf"/></svg>PDF</a>
+              <a class="pub-link" href="https://arxiv.org/abs/2307.05721" target="_blank" rel="noopener"><svg><use href="#i-external"/></svg>arXiv</a>
+              <a class="pub-link" href="https://iai-hrc.github.io/ha-vid" target="_blank" rel="noopener"><svg><use href="#i-external"/></svg>Project</a>
+              <a class="pub-link" href="https://github.com/iai-hrc/ha-vid" target="_blank" rel="noopener"><svg><use href="#i-github"/></svg>Code</a>
+            </div>
+          </article>
 
-							<h50>"Adversarial Self-Supervised Contrastive Learning"</h50>
-								<ul>
-								<li> <h60>Stella Yu's Group, UC Berkeley, Nov. 2020</h60> </li>
-								<li> <h60>NeurIPS Social: ML in Korea, Dec. 2020</h60> </li>
-								<li> <h60>Korea Software Congress (KSC): Korea Post-NeurIPS-2020 Workshop, Dec. 2020</h60> </li>
-								<li> <h60>Kakao Brain, Feb. 2021</h60> </li>
-								<li> <h60>Korean Conference on Computer Vision, Aug. 2021 </h60></li>
-								</ul>
-							<h50>"MRI-based classification of neuropsychiatric systemic lupus erythematosus patients with self-supervised contrastive learning"</h50>
-								<ul>
-								<li> <h60>ESMRMB (Lightening Talk), Sep. 2020</h60></li>
-								</ul>
+          <!-- 8 -->
+          <article class="pub-item reveal" data-type="first">
+            <div class="pub-top"><span class="pub-venue venue-conf">Conference</span><span class="pub-year">2024</span><span class="pub-author-tag">First author</span></div>
+            <h3><a href="files/papers/zheng2024-ducas-iros.pdf">DuCAS: A knowledge-enhanced dual-hand compositional action segmentation method for human-robot collaborative assembly</a></h3>
+            <p class="pub-authors"><span class="me">Hao Zheng</span>, Regina Lee, Huachang Liang, Yuqian Lu, Xun Xu</p>
+            <p class="pub-where"><em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 7175–7180</p>
+            <div class="pub-links">
+              <a class="pub-link pdf" href="files/papers/zheng2024-ducas-iros.pdf"><svg><use href="#i-pdf"/></svg>PDF</a>
+              <a class="pub-link" href="https://github.com/LISMS-AKL-NZ/DuCAS" target="_blank" rel="noopener"><svg><use href="#i-github"/></svg>Code</a>
+            </div>
+          </article>
 
-                            <h50>"Deep neural network from CNN to GAN"</h50>
-								<ul>
-								<li> <h60>LUMC, Aug. 2019</h60></li>
-								</ul>
-                    </div>
-                </div>
+          <!-- 9 -->
+          <article class="pub-item reveal" data-type="first">
+            <div class="pub-top"><span class="pub-venue venue-journal">Journal</span><span class="pub-year">2024</span><span class="pub-author-tag co">Co-first</span></div>
+            <h3><a href="files/papers/lee2024-hr-sat-rcim.pdf">Human-robot shared assembly taxonomy: A step toward seamless human-robot knowledge transfer</a></h3>
+            <p class="pub-authors">Regina K. J. Lee<span class="co-first">*</span>, <span class="me co-first">Hao Zheng*</span>, Yuqian Lu</p>
+            <p class="pub-where"><em>Robotics and Computer-Integrated Manufacturing</em>, 86, 102686 · Q1 · IF 12.3</p>
+            <div class="pub-links">
+              <a class="pub-link pdf" href="files/papers/lee2024-hr-sat-rcim.pdf"><svg><use href="#i-pdf"/></svg>PDF</a>
+              <a class="pub-link" href="https://www.sciencedirect.com/science/article/pii/S0736584523001618" target="_blank" rel="noopener"><svg><use href="#i-external"/></svg>DOI</a>
+              <a class="pub-link" href="https://iai-hrc.github.io/hr-sat" target="_blank" rel="noopener"><svg><use href="#i-external"/></svg>Project</a>
             </div>
-        </section> -->
-         <!-- Academic Activity section-->
-        <section id="Academic">
-            <div class="container-lg px-5">
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-10">
-                        <h2>Academic Activity</h2>
-                        <h40><b>Conference reviewer</b></h40>
-			    <ul>
-				    <li><h50> Conference on Neural Information Processing Systems (NeurIPS): 2024</h50></li>
-				    <li><h50> IEEE International Conference on Automation Science and Engineering (CASE): 2024 </h50></li>
-			    </ul>
-			<h40> <b>Journal reviewer</b> </h40>
-			    <ul>
-                    <li><h50> IEEE Transactions on Instrumentation & Measurement</h50></li>
-				    <li><h50> Robotics and Computer-Integrated Manufacturing </h50></li>
-				    <li><h50> Measurement </h50></li>
-				    <li><h50> International Journal of Computer Integrated Manufacturing</h50> </li>
-			    </ul>
-                    </div>
-                </div>
+          </article>
+
+          <!-- 10 -->
+          <article class="pub-item reveal" data-type="first">
+            <div class="pub-top"><span class="pub-venue venue-conf">Conference</span><span class="pub-year">2024</span><span class="pub-author-tag">First author</span></div>
+            <h3><a href="files/papers/zheng2024-duha-case.pdf">DuHa: A dual-hand action segmentation method for human-robot collaborative assembly</a></h3>
+            <p class="pub-authors"><span class="me">Hao Zheng</span>, Regina Lee, Yuqian Lu, Xun Xu</p>
+            <p class="pub-where"><em>IEEE International Conference on Automation Science and Engineering (CASE)</em>, 522–527</p>
+            <div class="pub-links">
+              <a class="pub-link pdf" href="files/papers/zheng2024-duha-case.pdf"><svg><use href="#i-pdf"/></svg>PDF</a>
+              <a class="pub-link" href="https://github.com/LISMS-AKL-NZ/DuHa" target="_blank" rel="noopener"><svg><use href="#i-github"/></svg>Code</a>
             </div>
-        </section>
-        <!-- Education section-->
-        <section class="bg-light" id="education">
-            <div class="container-lg px-5">
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-10">
-                        <h2>Education</h2>
-                        <h50>Ph.D. <b>(current)</b></h50>  
-                        <ul>
-                        	<li><h60> The Univeristy of Auckalnd </h60></li>
-                        	<li><h60> Supervisor: Prof. Xun Xu</h60> </li>
-                        </ul>
-                        <h50>M.S. of Engineering</h50>
-                        <ul>
-                        	<li><h60> China University of Mining and Technology</h60> </li>
-                        	<li><h60> Supervisor: Prof. Gang Cheng</h60> </li>
-                        </ul>
-                        <h50>B.S. of Engineering</h50>
-                        <ul>
-                        	<li><h60> Yancheng Institute of Technology </h60> </li>
-                        </ul>
-                    </div>
-                </div>
+          </article>
+
+          <!-- 11 -->
+          <article class="pub-item reveal" data-type="first">
+            <div class="pub-top"><span class="pub-venue venue-conf">Conference</span><span class="pub-year">2023</span><span class="pub-author-tag">First author</span></div>
+            <h3><a href="files/papers/zheng2023-fatigue-case.pdf">Video-based fatigue estimation for human-robot task allocation optimisation</a></h3>
+            <p class="pub-authors"><span class="me">Hao Zheng</span>, Saahil Chand, Ali Keshvarparast, Daria Battini, Yuqian Lu</p>
+            <p class="pub-where"><em>IEEE International Conference on Automation Science and Engineering (CASE)</em>, 1–6</p>
+            <div class="pub-links">
+              <a class="pub-link pdf" href="files/papers/zheng2023-fatigue-case.pdf"><svg><use href="#i-pdf"/></svg>PDF</a>
+              <a class="pub-link" href="https://ieeexplore.ieee.org/abstract/document/10260460" target="_blank" rel="noopener"><svg><use href="#i-external"/></svg>DOI</a>
             </div>
-        </section>
-        <!-- Contact section-->
-        <section id="contact">
-            <div class="container-lg px-5">
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-10">
-                        <h2>Contact</h2>
-                        <!-- <h50>hzhe951@aucklanduni.ac.nz</h50> -->
-                        <a href="mailto:hzhe951@aucklanduni.ac.nz">hzhe951@aucklanduni.ac.nz</a>
-                    </div>
-                </div>
+          </article>
+
+          <!-- 12 -->
+          <article class="pub-item reveal" data-type="first">
+            <div class="pub-top"><span class="pub-venue venue-journal">Journal</span><span class="pub-year">2022</span><span class="pub-author-tag">First author</span></div>
+            <h3><a href="files/papers/zheng2022-general-fault-measurement.pdf">A general fault diagnosis framework for rotating machinery and its flexible application example</a></h3>
+            <p class="pub-authors"><span class="me">Hao Zheng</span>, Gang Cheng, Yuqian Lu, Chang Liu, Yong Li</p>
+            <p class="pub-where"><em>Measurement</em>, 199, 111497 · Q1 · IF 6.1</p>
+            <div class="pub-links">
+              <a class="pub-link pdf" href="files/papers/zheng2022-general-fault-measurement.pdf"><svg><use href="#i-pdf"/></svg>PDF</a>
+              <a class="pub-link" href="https://www.sciencedirect.com/science/article/abs/pii/S0263224122007205" target="_blank" rel="noopener"><svg><use href="#i-external"/></svg>DOI</a>
             </div>
-        </section>
-        <!-- Footer-->
-        <footer class="py-5 bg-dark">
-            <div class="container px-5"><p class="m-0 text-center text-white">Updated Oct. 2024</p></div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+          </article>
+
+          <!-- 13 -->
+          <article class="pub-item reveal" data-type="first">
+            <div class="pub-top"><span class="pub-venue venue-journal">Journal</span><span class="pub-year">2020</span><span class="pub-author-tag">First author</span></div>
+            <h3><a href="files/papers/zheng2020-fault-bow-measurement.pdf">A fault diagnosis method for planetary gear under multi-operating conditions based on adaptive extended bag-of-words model</a></h3>
+            <p class="pub-authors"><span class="me">Hao Zheng</span>, Gang Cheng, Yong Li, Chang Liu</p>
+            <p class="pub-where"><em>Measurement</em>, 156, 107593 · Q1 · IF 6.1</p>
+            <div class="pub-links">
+              <a class="pub-link pdf" href="files/papers/zheng2020-fault-bow-measurement.pdf"><svg><use href="#i-pdf"/></svg>PDF</a>
+              <a class="pub-link" href="https://www.sciencedirect.com/science/article/abs/pii/S0263224120301305" target="_blank" rel="noopener"><svg><use href="#i-external"/></svg>DOI</a>
+            </div>
+          </article>
+
+          <!-- 14 -->
+          <article class="pub-item reveal" data-type="first">
+            <div class="pub-top"><span class="pub-venue venue-journal">Journal</span><span class="pub-year">2023</span><span class="pub-author-tag co">Co-first</span></div>
+            <h3>Vibration-based and computer vision-aided nondestructive health condition evaluation of rail track structures</h3>
+            <p class="pub-authors">Shaohua Wang<span class="co-first">*</span>, <span class="me co-first">Hao Zheng*</span>, Lihua Tang, Zhaoyu Li, Renda Zhao, Yuqian Lu, Kean C. Aw</p>
+            <p class="pub-where"><em>Journal of Civil Structural Health Monitoring</em>, 13(1), 1–14 · Q1 · IF 5.2</p>
+            <div class="pub-links"><a class="pub-link" href="https://link.springer.com/article/10.1007/s13349-022-00616-x" target="_blank" rel="noopener"><svg><use href="#i-external"/></svg>DOI</a></div>
+          </article>
+
+          <!-- 15 -->
+          <article class="pub-item reveal" data-type="first">
+            <div class="pub-top"><span class="pub-venue venue-journal">Journal</span><span class="pub-year">2019</span><span class="pub-author-tag">First author</span></div>
+            <h3><a href="files/papers/zheng2019-fault-image-bow-measurement.pdf">A new fault diagnosis method for planetary gear based on image feature extraction and bag-of-words model</a></h3>
+            <p class="pub-authors"><span class="me">Hao Zheng</span>, Gang Cheng, Yong Li, Chang Liu</p>
+            <p class="pub-where"><em>Measurement</em>, 145, 1–13 · Q1 · IF 6.1</p>
+            <div class="pub-links">
+              <a class="pub-link pdf" href="files/papers/zheng2019-fault-image-bow-measurement.pdf"><svg><use href="#i-pdf"/></svg>PDF</a>
+              <a class="pub-link" href="https://www.sciencedirect.com/science/article/pii/S0263224119304725" target="_blank" rel="noopener"><svg><use href="#i-external"/></svg>DOI</a>
+            </div>
+          </article>
+
+          <!-- Collaborative -->
+          <article class="pub-item reveal" data-type="collab">
+            <div class="pub-top"><span class="pub-venue venue-journal">Journal</span><span class="pub-year">2025</span><span class="pub-author-tag collab">Collaborative</span></div>
+            <h3>Large vision-language models enabled novel objects 6D pose estimation for human-robot collaboration</h3>
+            <p class="pub-authors">Wanqing Xia, <span class="me">Hao Zheng</span>, Wenbin Xu, Xun Xu</p>
+            <p class="pub-where"><em>Robotics and Computer-Integrated Manufacturing</em>, 95, 103030 · Q1 · IF 12.3</p>
+          </article>
+
+          <article class="pub-item reveal" data-type="collab">
+            <div class="pub-top"><span class="pub-venue venue-journal">Journal</span><span class="pub-year">2025</span><span class="pub-author-tag collab">Collaborative</span></div>
+            <h3>ESC-DRKD: Enhanced skip connection-based direct reverse knowledge distillation for medical image anomaly detection</h3>
+            <p class="pub-authors">Chongwen Ge, Xiyu Yu, <span class="me">Hao Zheng</span>, Zhenjie Fan, Usman Muhammad, Jiayi Chen, Perry P. Shum</p>
+            <p class="pub-where"><em>Neurocomputing</em>, 651, 130994 · Q1 · IF 6.7</p>
+          </article>
+
+          <article class="pub-item reveal" data-type="collab">
+            <div class="pub-top"><span class="pub-venue venue-journal">Journal</span><span class="pub-year">2025</span><span class="pub-author-tag collab">Collaborative</span></div>
+            <h3>A dual reverse distillation scheme for image anomaly detection</h3>
+            <p class="pub-authors">Chongwen Ge, Xiyu Yu, <span class="me">Hao Zheng</span>, Zhenjie Fan, Jiayi Chen, Perry P. Shum</p>
+            <p class="pub-where"><em>Neurocomputing</em>, 624, 129479 · Q1 · IF 6.7</p>
+          </article>
+
+          <article class="pub-item reveal" data-type="collab">
+            <div class="pub-top"><span class="pub-venue venue-journal">Journal</span><span class="pub-year">2024</span><span class="pub-author-tag collab">Collaborative</span></div>
+            <h3>A vision-enabled fatigue-sensitive human digital twin towards human-centric human-robot collaboration</h3>
+            <p class="pub-authors">Saahil Chand, <span class="me">Hao Zheng</span>, Yuqian Lu</p>
+            <p class="pub-where"><em>Journal of Manufacturing Systems</em>, 77, 432–445 · Q1 · IF 14.9</p>
+          </article>
+
+          <article class="pub-item reveal" data-type="collab">
+            <div class="pub-top"><span class="pub-venue venue-journal">Journal</span><span class="pub-year">2022</span><span class="pub-author-tag collab">Collaborative</span></div>
+            <h3>Outlook on human-centric manufacturing towards Industry 5.0</h3>
+            <p class="pub-authors">Yuqian Lu, <span class="me">Hao Zheng</span>, Saahil Chand, Wanqing Xia, Zengkun Liu, Xun Xu, Lihua Wang, Zhaojun Qin, Jinsong Bao</p>
+            <p class="pub-where"><em>Journal of Manufacturing Systems</em>, 62, 612–627 · Q1 · IF 14.9</p>
+            <div class="pub-links"><a class="pub-link" href="https://www.sciencedirect.com/science/article/abs/pii/S0278612522000164" target="_blank" rel="noopener"><svg><use href="#i-external"/></svg>DOI</a></div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section id="projects" class="alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Selected projects</span>
+          <h2>Research projects</h2>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card reveal">
+            <span class="p-icon"><svg><use href="#i-robot"/></svg></span>
+            <span class="p-meta">2017 – 2020 · NSF of China</span>
+            <h3>Dynamic coupling &amp; collaborative control of large mirror manufacturing equipment</h3>
+            <p>Developed multimodal fault-diagnosis methods for condition monitoring and operational reliability of rotating machinery.</p>
+          </div>
+          <div class="project-card reveal" data-delay="1">
+            <span class="p-icon"><svg><use href="#i-radar"/></svg></span>
+            <span class="p-meta">2018 – 2019 · Principal researcher</span>
+            <h3>Intelligent sensing for crusher front-end protection</h3>
+            <p>Developed a distributed laser-sensing system for hazardous-area personnel protection in mining environments.</p>
+          </div>
+          <div class="project-card reveal" data-delay="2">
+            <span class="p-icon"><svg><use href="#i-camera"/></svg></span>
+            <span class="p-meta">2019 · Principal researcher</span>
+            <h3>Intelligent monitoring &amp; warning system for dangerous areas</h3>
+            <p>Developed a computer-vision safety warning system for industrial and mining workspaces.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Appointments</span>
+          <h2>Experience</h2>
+        </div>
+        <div class="timeline">
+          <div class="tl-item reveal">
+            <span class="tl-dot"></span>
+            <span class="tl-when">Apr 2026 – Present</span>
+            <h3>Postdoctoral Fellow</h3>
+            <div class="tl-where">The University of Hong Kong · Dept. of Civil Engineering</div>
+            <p class="tl-desc">Collaborative embodied AI, human–robot collaboration, and digital twins for modular construction. Advisor: Prof. Xiao Li.</p>
+          </div>
+          <div class="tl-item blue reveal">
+            <span class="tl-dot"></span>
+            <span class="tl-when">May 2025 – Apr 2026</span>
+            <h3>Postdoctoral Fellow</h3>
+            <div class="tl-where">New York University Abu Dhabi · Centre for AI &amp; Robotics / CS</div>
+            <p class="tl-desc">Multimodal vision-language learning and diffusion-based dual-hand action segmentation for complex assembly videos. Advisor: Prof. Tuka Alhanai.</p>
+          </div>
+          <div class="tl-item teal reveal">
+            <span class="tl-dot"></span>
+            <span class="tl-when">Feb 2025 – May 2025</span>
+            <h3>Research Associate</h3>
+            <div class="tl-where">The University of Hong Kong · Center for Transformative Garment Production</div>
+            <p class="tl-desc">Video- and EMG-based worker-state estimation and human-centric collaboration for garment production. Advisor: Prof. Hatice Gunes, University of Cambridge.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EDUCATION ===================== -->
+    <section id="education" class="alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Education</span>
+          <h2>Education</h2>
+        </div>
+        <div class="timeline">
+          <div class="tl-item reveal">
+            <span class="tl-dot"></span>
+            <span class="tl-when">2020 – 2025</span>
+            <h3>PhD in Mechanical Engineering</h3>
+            <div class="tl-where">The University of Auckland, New Zealand</div>
+            <p class="tl-desc">Advisors: Prof. Xun Xu and Dr. Jan Polzer. Official award confirmation December 2025.</p>
+          </div>
+          <div class="tl-item blue reveal">
+            <span class="tl-dot"></span>
+            <span class="tl-when">2017 – 2020</span>
+            <h3>MEng in Mechanical Design and Theory</h3>
+            <div class="tl-where">China University of Mining and Technology, China</div>
+            <p class="tl-desc">Advisor: Prof. Gang Cheng.</p>
+          </div>
+          <div class="tl-item teal reveal">
+            <span class="tl-dot"></span>
+            <span class="tl-when">2013 – 2017</span>
+            <h3>BEng in Mechanical Engineering and Automation</h3>
+            <div class="tl-where">Yancheng Institute of Technology, China</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HONORS ===================== -->
+    <section id="awards">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Honors</span>
+          <h2>Honors &amp; awards</h2>
+        </div>
+        <div class="awards-grid">
+          <div class="award reveal"><span class="a-icon"><svg><use href="#i-award"/></svg></span><div><h4>Chinese Government Scholarship (CSC)</h4><p>China Scholarship Council</p></div><span class="a-year">2020</span></div>
+          <div class="award reveal" data-delay="1"><span class="a-icon"><svg><use href="#i-award"/></svg></span><div><h4>National Scholarship for Postgraduate Students</h4><p>Ministry of Education, China</p></div><span class="a-year">2019</span></div>
+          <div class="award reveal" data-delay="2"><span class="a-icon"><svg><use href="#i-award"/></svg></span><div><h4>Excellence Student Award</h4><p>China University of Mining and Technology</p></div><span class="a-year">2019</span></div>
+          <div class="award reveal" data-delay="3"><span class="a-icon"><svg><use href="#i-award"/></svg></span><div><h4>Second Prize — May Day Mathematical Modeling Competition</h4><p>National competition</p></div><span class="a-year">2019</span></div>
+        </div>
+
+        <div class="section-head reveal" style="margin-top:64px">
+          <span class="eyebrow">Intellectual property</span>
+          <h2>Patents</h2>
+        </div>
+        <div class="awards-grid">
+          <div class="award reveal"><span class="a-icon"><svg><use href="#i-shield"/></svg></span><div><h4>A front-end personnel protection system of mine crusher based on image recognition</h4><p>Chinese invention patent · CN201910915839.0</p></div><span class="a-year">2021</span></div>
+          <div class="award reveal" data-delay="1"><span class="a-icon"><svg><use href="#i-shield"/></svg></span><div><h4>A protection system and method for front-end personnel of underground crusher</h4><p>Chinese invention patent · CN201811197496.0</p></div><span class="a-year">2021</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SERVICE ===================== -->
+    <section id="service" class="alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Academic service</span>
+          <h2>Service &amp; teaching</h2>
+        </div>
+        <div class="service-grid">
+          <div class="service-card reveal">
+            <h3><svg><use href="#i-users"/></svg> Conference reviewer</h3>
+            <ul>
+              <li>NeurIPS (2024–2026)</li>
+              <li>IEEE CASE (2024–2026)</li>
+            </ul>
+          </div>
+          <div class="service-card reveal" data-delay="1">
+            <h3><svg><use href="#i-book"/></svg> Journal reviewer</h3>
+            <ul>
+              <li>Robotics and Computer-Integrated Manufacturing</li>
+              <li>Journal of Manufacturing Systems</li>
+              <li>IEEE Trans. on Instrumentation &amp; Measurement</li>
+              <li>Neurocomputing</li>
+            </ul>
+          </div>
+          <div class="service-card reveal" data-delay="2">
+            <h3><svg><use href="#i-robot"/></svg> Teaching &amp; service</h3>
+            <ul>
+              <li>Teaching Assistant, University of Auckland (2023–2024)</li>
+              <li>Session Chair — Frontiers of Digital Twin in Intelligent Manufacturing &amp; Smart Cities (2025)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact">
+      <div class="container">
+        <div class="contact-panel reveal">
+          <div>
+            <span class="eyebrow" style="color:var(--accent-soft)">Let's connect</span>
+            <h2>Interested in collaborating?</h2>
+            <p>I'm always happy to discuss research at the boundary of AI and robotics — embodied AI, video understanding, human–robot collaboration and smart manufacturing. Reach out anytime.</p>
+            <a class="contact-mail" href="mailto:haozheng5219@gmail.com"><svg><use href="#i-mail"/></svg> haozheng5219@gmail.com</a>
+          </div>
+          <div class="contact-links">
+            <a href="mailto:haozheng5219@gmail.com" aria-label="Email"><svg><use href="#i-mail"/></svg></a>
+            <a href="https://scholar.google.com/citations?user=OHEa2rIAAAAJ" target="_blank" rel="noopener" aria-label="Google Scholar"><svg><use href="#i-scholar"/></svg></a>
+            <a href="https://github.com/hzhengrd" target="_blank" rel="noopener" aria-label="GitHub"><svg><use href="#i-github"/></svg></a>
+            <a href="https://www.linkedin.com/in/hao-zheng-ab7b15248/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="container">
+      <div>
+        <div class="f-brand">Hao Zheng · 郑浩</div>
+        <p>© 2026 Hao Zheng · Postdoctoral Fellow, The University of Hong Kong</p>
+      </div>
+      <a class="top" href="#top"><svg width="16" height="16"><use href="#i-up"/></svg> Back to top</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
 </html>

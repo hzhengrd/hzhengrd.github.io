@@ -1,0 +1,21 @@
+# robots.txt — Hao Zheng research homepage
+# Allow all search engines; keep stale template drafts out of the index.
+User-agent: *
+Allow: /
+
+# Old draft iterations of the homepage (duplicate-content risk).
+Disallow: /index_old.html
+Disallow: /index_old2.html
+Disallow: /index_new.html
+Disallow: /index_top.html
+
+# Jekyll source / build artifacts (not part of the live site).
+Disallow: /_pages/
+Disallow: /_publications/
+Disallow: /_posts/
+Disallow: /_layouts/
+Disallow: /_includes/
+Disallow: /_sass/
+Disallow: /_data/
+
+Sitemap: https://hzhengrd.github.io/sitemap.xml
